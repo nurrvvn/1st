@@ -22,6 +22,7 @@ body{
     text-align: center;
     border-radius: 20%;
     box-shadow: 0 5px 25px 1px;
+    padding: 1rem;
 }
 
 img{
@@ -29,7 +30,7 @@ img{
     width: 100px;
     height: 100px;
     align-content: center;
-    margin-left: 120px;
+    margin-left: 110px;
 }
 .container h4,
 .container p {
@@ -59,7 +60,6 @@ img{
     padding: 0.5em 1.2em;
     font-weight: 600;
     text-transform: uppercase;
-    border: 50%;
     position: relative;
     z-index: 10;
 }
