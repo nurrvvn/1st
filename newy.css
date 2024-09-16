@@ -1,0 +1,92 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20%;
+    box-shadow: 0 5px 25px 1px;
+}
+
+img{
+    size: 5px;
+    width: 100px;
+    height: 100px;
+    align-content: center;
+    margin-left: 120px;
+}
+.container h4,
+.container p {
+    margin-bottom: 2em;
+}
+
+.container .kkk {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: rgba(35, 46, 77, 0.8);
+    transition: all 0.5s;
+}
+
+.container .kkk:hover {
+    transform: scale(1.05);
+    color: rgba(35, 46, 77, 1);
+}
+
+.container .gift {
+    color: #e6a54c;
+}
+
+.container button {
+    color: white;
+    background-color: #8b1414;
+    padding: 0.5em 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.container button::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: all 1s;
+}
+
+.container button:hover {
+    cursor: pointer;
+    color: #232e4d;
+    border: 2px solid #232e4d;
+}
+
+.container button:hover::before {
+    width: 100%;
+    z-index: -1;
+    cursor: pointer;
+}
